@@ -41,6 +41,7 @@ public class CharacterStats : MonoBehaviour
 
     }
 
+   
     private void rotateClockwise()
     {
         transform.Rotate(Vector3.back, rotate_mod_fl);
@@ -60,6 +61,12 @@ public class CharacterStats : MonoBehaviour
   
 
     }
+    //Allows modification of the speed value from outside of this class.
+    public void ModifySpeed(float speed_mod)
+    {
+        speed_mod_fl += speed_mod;
+    }
+
 
 
 }
